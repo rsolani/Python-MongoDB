@@ -9,6 +9,6 @@ class MongoConnection:
 
     @property
     def get_collection(self):
-        client = MongoClient("mongodb://")
+        client = MongoClient("mongodb://ip:port")
         db = client.freepy
         return db[self.col_name]
